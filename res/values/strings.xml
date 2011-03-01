@@ -331,6 +331,14 @@
     <string name="pref_summary_manage_sim_messages">Manage messages stored on your SIM card</string>
     <!-- Settings item description for boolean MMS delivery report setting -->
     <string name="pref_summary_mms_delivery_reports">Request a delivery report for each message you send</string>
+    <!-- Settings item for SMS Split 160 characters setting -->
+    <string name="pref_title_sms_split_160">SMS Split</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_160">Split messages every 160 characters</string>
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Split counter</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">Adds counter to message ex. (1/2)</string>
     <!-- Settings item description for boolean MMS read report setting -->
     <string name="pref_summary_mms_read_reports">Request a read report for each message you send</string>
     <!-- Settings item description for boolean SMS delivery report setting -->
