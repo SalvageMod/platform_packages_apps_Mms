@@ -66,6 +66,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String MESSAGE_FONT_SIZE	= "pref_key_mms_message_font_size";
     public static final String CONVO_FROM_FONT_SIZE     = "pref_key_mms_convo_from_font_size";
     public static final String CONVO_SUBJECT_FONT_SIZE     = "pref_key_mms_convo_subject_font_size";
+    public static final String BACK_TO_ALL_THREADS      = "pref_key_mms_back_to_all_threads";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;

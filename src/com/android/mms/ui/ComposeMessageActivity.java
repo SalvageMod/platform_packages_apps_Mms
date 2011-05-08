@@ -227,6 +227,7 @@ public class ComposeMessageActivity extends Activity
     private boolean mExitOnSent;            // Should we finish() after sending a message?
 
     private boolean mBlackBackground;       // Option for switch background from white to black
+    private boolean mBackToAllThreads;      // Always return to all conversations list
 
     private View mTopPanel;                 // View containing the recipient and subject editors
     private View mBottomPanel;              // View containing the text editor, send button, ec.
@@ -1683,6 +1684,7 @@ public class ComposeMessageActivity extends Activity
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences((Context)ComposeMessageActivity.this);
         mBlackBackground = prefs.getBoolean(MessagingPreferenceActivity.BLACK_BACKGROUND, false);
+        mBackToAllThreads = prefs.getBoolean(MessagingPreferenceActivity.BACK_TO_ALL_THREADS, false);
         if(!mBlackBackground) {
             setContentView(R.layout.compose_message_activity);
         } else {
@@ -2127,9 +2129,14 @@ public class ComposeMessageActivity extends Activity
                 break;
             case KeyEvent.KEYCODE_BACK:
                 exitComposeMessageActivity(new Runnable() {
-                    public void run() {
-                        finish();
-                    }
+                        public void run() {
+                       //Always return to all conversations list
+                        if (mBackToAllThreads) {
+                            goToConversationList();
+                       } else {
+                            finish();
+                        }
+                     }
                 });
                 return true;
         }

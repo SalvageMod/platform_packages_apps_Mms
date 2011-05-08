@@ -793,5 +793,9 @@
     <!-- Toggle Convo List Subject Font size -->
     <string name="pref_title_mms_convo_from_font_size">Convo From Font Size</string>
     <string name="pref_summary_mms_convo_from_font_size">Change Font Fize of Convo From\n(Restart mms)</string>
+
+    <!-- Back to Convo List -->
+    <string name="pref_title_mms_back_to_all_threads">Back to conversation list</string>
+    <string name="pref_summary_mms_back_to_all_threads">Always go to all-conversations when back button is pressed</string>
 </resources>
 
