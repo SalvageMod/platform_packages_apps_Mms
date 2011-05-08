@@ -46,15 +46,6 @@
                       android:key="pref_key_sms_delivery_reports"
                       android:summary="@string/pref_summary_sms_delivery_reports"
                       android:title="@string/pref_title_sms_delivery_reports" />
-    <CheckBoxPreference android:defaultValue="false"
-                      android:key="pref_key_sms_split_160"
-                      android:summary="@string/pref_summary_sms_split_160"
-                      android:title="@string/pref_title_sms_split_160" />
-    <CheckBoxPreference android:defaultValue="false"
-                      android:key="pref_key_sms_split_counter"
-                      android:summary="@string/pref_summary_sms_split_counter"
-                      android:dependency="pref_key_sms_split_160"
-                      android:title="@string/pref_title_sms_split_counter" />
     <Preference android:key="pref_key_manage_sim_messages"
                       android:summary="@string/pref_summary_manage_sim_messages"
                       android:title="@string/pref_title_manage_sim_messages" />
@@ -103,17 +94,26 @@
   </PreferenceCategory>
   <PreferenceCategory android:title="@string/pref_extra_settings">
     <CheckBoxPreference android:key="pref_key_mms_black_background"
-                        android:title="@string/pref_title_mms_black_background"
-                        android:summary="@string/pref_summary_mms_black_background"
-                        android:defaultValue="false" />
+ 	                  android:title="@string/pref_title_mms_black_background"
+ 	                  android:summary="@string/pref_summary_mms_black_background"
+ 	                  android:defaultValue="false" />
+    <CheckBoxPreference android:defaultValue="false"
+                      android:key="pref_key_sms_split_160"
+                      android:summary="@string/pref_summary_sms_split_160"
+                      android:title="@string/pref_title_sms_split_160" />
+    <CheckBoxPreference android:defaultValue="false"
+                      android:key="pref_key_sms_split_counter"
+                      android:summary="@string/pref_summary_sms_split_counter"
+                      android:dependency="pref_key_sms_split_160"
+                      android:title="@string/pref_title_sms_split_counter" />
     <PreferenceScreen android:key="pref_key_mms_font_size_settings"
                       android:title="@string/pref_dialogtitle_mms_salvage_font_size">
     <ListPreference android:key="pref_key_mms_message_font_size"
                     android:defaultValue="14"
                     android:title="@string/pref_title_mms_message_font_size"
                     android:summary="@string/pref_summary_mms_message_font_size"
-                    android:entries="@array/pref_mms_overall_font_size_entries"
-                    android:entryValues="@array/pref_mms_overall_font_size_values"
+                    android:entries="@array/pref_mms_message_font_size_entries"
+                    android:entryValues="@array/pref_mms_message_font_size_values"
                     android:dialogTitle="@string/pref_dialogtitle_mms_overall_font_size" />
     <ListPreference android:key="pref_key_mms_convo_from_font_size"
                     android:defaultValue="16"
@@ -129,6 +129,6 @@
                     android:entries="@array/pref_mms_convo_subject_font_size_entries"
                     android:entryValues="@array/pref_mms_convo_subject_font_size_values"
                     android:dialogTitle="@string/pref_dialogtitle_mms_overall_font_size" />
+    </PreferenceScreen>
+    </PreferenceCategory>
   </PreferenceScreen>
-  </PreferenceCategory>
-</PreferenceScreen>
