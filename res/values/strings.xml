@@ -777,8 +777,12 @@
     <string name="pref_title_mms_message_font_size">Message font size</string>
     <string name="pref_summary_mms_message_font_size">Change font size of message view</string>
 
-    <!-- Toggle Convo list From Font Size -->
+    <!-- Toggle Convo List From Font Size -->
     <string name="pref_title_mms_convo_from_font_size">Convo List From font size</string>
     <string name="pref_summary_mms_convo_from_font_size">Change font size of Convo List From</string>
+
+    <!-- Toggle Convo List Subject Font size -->
+    <string name="pref_title_mms_convo_subject_font_size">Convo Subject font size</string>
+    <string name="pref_summary_mms_convo_subject_font_size">Change font size of Convo Subject</string>
 </resources>
 

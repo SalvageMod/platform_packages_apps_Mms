@@ -111,5 +111,12 @@
                     android:entries="@array/pref_mms_convo_from_font_size_entries"
                     android:entryValues="@array/pref_mms_convo_from_font_size_values"
                     android:dialogTitle="@string/pref_dialogtitle_mms_overall_font_size" />
+    <ListPreference android:key="pref_key_mms_convo_subject_font_size"
+                    android:defaultValue="14"
+                    android:title="@string/pref_title_mms_convo_subject_font_size"
+                    android:summary="@string/pref_summary_mms_convo_subject_font_size"
+                    android:entries="@array/pref_mms_overall_font_size_entries"
+                    android:entryValues="@array/pref_mms_overall_font_size_values"
+                    android:dialogTitle="@string/pref_dialogtitle_mms_convo_subject_font_size" />
   </PreferenceCategory>
 </PreferenceScreen>
