@@ -256,10 +256,15 @@ public class MessagingNotification {
         }
 
         public void deliver(Context context, boolean isNew, int count, int uniqueThreads) {
+          SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+          Log.i("MMS", "mTitle - " + mTitle);
+	  // This is theory and in place to test in the future. Lithid
+          //if mTitle.equals("9016")) {
             updateNotification(
                     context, mClickIntent, mDescription, mIconResourceId, isNew,
                     (isNew? mTicker : null), // only display the ticker if the message is new
                     mTimeMillis, mTitle, count, uniqueThreads);
+          //}
         }
 
         public long getTime() {
