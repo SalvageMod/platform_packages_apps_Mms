@@ -61,4 +61,22 @@
         <item>Laughing</item>                <!-- 15: :-D -->
         <item>Confused</item>                <!-- 16: o_O -->
     </string-array>
+
+   <string-array name="pref_mms_message_font_size_entries">
+         <item>10</item>
+         <item>12</item>
+         <item>14 (default)</item>
+  	 <item>16</item>
+         <item>18 </item>
+         <item>20</item>
+  </string-array>
+
+   <string-array translatable="false" name="pref_mms_message_font_size_values">
+         <item>10</item>
+         <item>12</item>
+         <item>14</item>
+         <item>16</item>
+         <item>18</item>
+         <item>20</item>
+  </string-array>
 </resources>
