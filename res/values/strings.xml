@@ -783,11 +783,15 @@
     <string name="pref_dialogtitle_mms_salvage_font_size">Salvage-Mod Font Settings</string>
 
     <!-- Toggle Message Font Size -->
-    <string name="pref_title_mms_message_font_size">Message font size</string>
-    <string name="pref_summary_mms_message_font_size">Change font size of message view</string>
+    <string name="pref_title_mms_message_font_size">Message Font Size</string>
+    <string name="pref_summary_mms_message_font_size">Change Font Size of Message View</string>
 
     <!-- Toggle Convo List Subject Font size -->
-    <string name="pref_title_mms_convo_subject_font_size">Convo Subject font size</string>
-    <string name="pref_summary_mms_convo_subject_font_size">Change font size of Convo Subject</string>
+    <string name="pref_title_mms_convo_subject_font_size">Convo Subject Font Size</string>
+    <string name="pref_summary_mms_convo_subject_font_size">Change Font Size of Convo Subject</string>
+
+    <!-- Toggle Convo List Subject Font size -->
+    <string name="pref_title_mms_convo_from_font_size">Convo From Font Size</string>
+    <string name="pref_summary_mms_convo_from_font_size">Change Font Fize of Convo From</string>
 </resources>
 
