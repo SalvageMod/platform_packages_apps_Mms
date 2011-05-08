@@ -91,6 +91,7 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         super.onFinishInflate();
 
         mFromView = (TextView) findViewById(R.id.from);
+        mFromView.setTextSize(Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(getContext()).getString(MessagingPreferenceActivity.CONVO_FROM_FONT_SIZE, "16")));
         mSubjectView = (TextView) findViewById(R.id.subject);
 
         mDateView = (TextView) findViewById(R.id.date);

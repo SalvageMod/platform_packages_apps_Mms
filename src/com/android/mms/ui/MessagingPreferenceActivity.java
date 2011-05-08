@@ -62,6 +62,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String AUTO_DELETE              = "pref_key_auto_delete";
     public static final String BLACK_BACKGROUND         = "pref_key_mms_black_background";
     public static final String MESSAGE_FONT_SIZE	= "pref_key_mms_message_font_size";
+    public static final String CONVO_FROM_FONT_SIZE     = "pref_key_mms_convo_from_font_size";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
