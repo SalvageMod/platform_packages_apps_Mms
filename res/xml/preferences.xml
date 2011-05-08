@@ -119,7 +119,7 @@
                     android:summary="@string/pref_summary_mms_convo_subject_font_size"
                     android:entries="@array/pref_mms_overall_font_size_entries"
                     android:entryValues="@array/pref_mms_overall_font_size_values"
-                    android:dialogTitle="@string/pref_dialogtitle_mms_convo_subject_font_size" />
+                    android:dialogTitle="@string/pref_dialogtitle_mms_overall_font_size" />
   </PreferenceScreen>
   </PreferenceCategory>
 </PreferenceScreen>
