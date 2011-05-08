@@ -332,7 +332,7 @@
     <!-- Settings item description for boolean MMS delivery report setting -->
     <string name="pref_summary_mms_delivery_reports">Request a delivery report for each message you send</string>
     <!-- Settings item for SMS Split 160 characters setting -->
-    <string name="pref_title_sms_split_160">SMS Split</string>
+    <string name="pref_title_sms_split_160">SMS split</string>
     <!-- Settings item description for boolean SMS Split 160 characters setting -->
     <string name="pref_summary_sms_split_160">Split messages every 160 characters</string>
     <!-- Settings item for boolean option for SMS Split Counter -->
@@ -775,12 +775,12 @@
     <string name="pref_extra_settings">Salvage-Mod Settings</string>
 
     <!-- Toggle setting for enable/disable Black Background -->
-    <string name="pref_title_mms_black_background">Black Background</string>
+    <string name="pref_title_mms_black_background">Black background</string>
     <string name="pref_summary_mms_black_background">Enable/disable black background\n(Restart Mms)</string>
 
     <!-- Overall String for Font Size -->
     <string name="pref_dialogtitle_mms_overall_font_size">Select font size</string>
-    <string name="pref_dialogtitle_mms_salvage_font_size">Salvage-Mod Font Settings</string>
+    <string name="pref_dialogtitle_mms_salvage_font_size">Mms font settings</string>
 
     <!-- Toggle Message Font Size -->
     <string name="pref_title_mms_message_font_size">Message Font Size</string>
