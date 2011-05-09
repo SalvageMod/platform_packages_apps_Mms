@@ -43,7 +43,7 @@ public class AttachmentTypeSelectorAdapter extends IconListAdapter {
     public AttachmentTypeSelectorAdapter(Context context, int mode) {
         super(context, getData(mode, context));
     }
-    
+
     public int buttonToCommand(int whichButton) {
         AttachmentListItem item = (AttachmentListItem)getItem(whichButton);
         return item.getCommand();
@@ -84,7 +84,7 @@ public class AttachmentTypeSelectorAdapter extends IconListAdapter {
         AttachmentListItem temp = new AttachmentListItem(title, resource, command);
         data.add(temp);
     }
-    
+
     public static class AttachmentListItem extends IconListAdapter.IconListItem {
         private int mCommand;
 

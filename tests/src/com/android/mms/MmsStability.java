@@ -36,7 +36,7 @@ import android.widget.Button;
  */
 
 public class MmsStability extends ActivityInstrumentationTestCase2 <ComposeMessageActivity> {
-    private static String TAG = "MmsStability"; 
+    private static String TAG = "MmsStability";
     private static int NO_OF_MESSAGE_SEND = 5; //Total number of messages
     private static String MESSAGE_CONTENT = "This is a system stability " +
                              "test for MMS. This test case send 5 message " +

@@ -23,12 +23,12 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.MediumTest;
 
 /**
- * Various instrumentation tests for ConversationList.  
- * 
+ * Various instrumentation tests for ConversationList.
+ *
  */
-public class ConversationListTests 
+public class ConversationListTests
         extends ActivityInstrumentationTestCase2<ConversationList> {
-    
+
     private Context mContext;
 
     public ConversationListTests() {
@@ -49,12 +49,12 @@ public class ConversationListTests
     @MediumTest
     public void testUiRaceConditions() {
     	ConversationList a = getActivity();
-        
+
         // menus
         getInstrumentation().invokeMenuActionSync(a, a.MENU_COMPOSE_NEW, 0);
         getInstrumentation().invokeMenuActionSync(a, a.MENU_SEARCH, 0);
         getInstrumentation().invokeMenuActionSync(a, a.MENU_PREFERENCES, 0);
         getInstrumentation().invokeMenuActionSync(a, a.MENU_DELETE_ALL, 0);
     }
-    */        
+    */
 }

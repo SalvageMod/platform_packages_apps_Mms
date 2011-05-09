@@ -227,7 +227,7 @@ public class MmsConfig {
             ;
         }
     }
-    
+
     private static void loadMmsSettings(Context context) {
         XmlResourceParser parser = context.getResources().getXml(R.xml.mms_config);
 

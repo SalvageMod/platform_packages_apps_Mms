@@ -26,11 +26,11 @@ public final class MessageListView extends ListView {
     public MessageListView(Context context) {
         super(context);
     }
-    
+
     public MessageListView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-    
+
     @Override
     public boolean onKeyShortcut(int keyCode, KeyEvent event) {
         switch (keyCode) {
@@ -51,6 +51,6 @@ public final class MessageListView extends ListView {
 
         return super.onKeyShortcut(keyCode, event);
     }
-    
+
 }
 

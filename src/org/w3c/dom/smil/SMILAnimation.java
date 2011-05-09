@@ -15,8 +15,8 @@ package org.w3c.dom.smil;
 import org.w3c.dom.DOMException;
 
 /**
- *  This interface define the set of animation extensions for SMIL.  The  
- * attributes will go in a XLink interface. 
+ *  This interface define the set of animation extensions for SMIL.  The
+ * attributes will go in a XLink interface.
  */
 public interface SMILAnimation extends SMILElement, ElementTargetAttributes, ElementTime, ElementTimeControl {
     // additiveTypes
@@ -24,10 +24,10 @@ public interface SMILAnimation extends SMILElement, ElementTargetAttributes, Ele
     public static final short ADDITIVE_SUM              = 1;
 
     /**
-     *  A code representing the value of the  additive attribute, as defined 
-     * above. Default value is <code>ADDITIVE_REPLACE</code> . 
+     *  A code representing the value of the  additive attribute, as defined
+     * above. Default value is <code>ADDITIVE_REPLACE</code> .
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public short getAdditive();
     public void setAdditive(short additive)
@@ -38,10 +38,10 @@ public interface SMILAnimation extends SMILElement, ElementTargetAttributes, Ele
     public static final short ACCUMULATE_SUM            = 1;
 
     /**
-     *  A code representing the value of the  accumulate attribute, as defined 
-     * above. Default value is <code>ACCUMULATE_NONE</code> . 
+     *  A code representing the value of the  accumulate attribute, as defined
+     * above. Default value is <code>ACCUMULATE_NONE</code> .
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public short getAccumulate();
     public void setAccumulate(short accumulate)
@@ -54,39 +54,39 @@ public interface SMILAnimation extends SMILElement, ElementTargetAttributes, Ele
     public static final short CALCMODE_SPLINE           = 3;
 
     /**
-     *  A code representing the value of the  calcMode attribute, as defined 
-     * above. 
+     *  A code representing the value of the  calcMode attribute, as defined
+     * above.
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public short getCalcMode();
     public void setCalcMode(short calcMode)
                                 throws DOMException;
 
     /**
-     *  A <code>DOMString</code> representing the value of the  keySplines 
-     * attribute.  Need an interface a point (x1,y1,x2,y2) 
+     *  A <code>DOMString</code> representing the value of the  keySplines
+     * attribute.  Need an interface a point (x1,y1,x2,y2)
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public String getKeySplines();
     public void setKeySplines(String keySplines)
                                 throws DOMException;
 
     /**
-     *  A list of the time value of the  keyTimes attribute. 
+     *  A list of the time value of the  keyTimes attribute.
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public TimeList getKeyTimes();
     public void setKeyTimes(TimeList keyTimes)
                                 throws DOMException;
 
     /**
-     *  A <code>DOMString</code> representing the value of the  values 
-     * attribute. 
+     *  A <code>DOMString</code> representing the value of the  values
+     * attribute.
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public String getValues();
     public void setValues(String values)
@@ -94,27 +94,27 @@ public interface SMILAnimation extends SMILElement, ElementTargetAttributes, Ele
 
     /**
      *  A <code>DOMString</code> representing the value of the  from attribute.
-     *  
+     *
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public String getFrom();
     public void setFrom(String from)
                                 throws DOMException;
 
     /**
-     *  A <code>DOMString</code> representing the value of the  to attribute. 
+     *  A <code>DOMString</code> representing the value of the  to attribute.
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public String getTo();
     public void setTo(String to)
                                 throws DOMException;
 
     /**
-     *  A <code>DOMString</code> representing the value of the  by attribute. 
+     *  A <code>DOMString</code> representing the value of the  by attribute.
      * @exception DOMException
-     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly. 
+     *    NO_MODIFICATION_ALLOWED_ERR: Raised if this attribute is readonly.
      */
     public String getBy();
     public void setBy(String by)

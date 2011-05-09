@@ -113,7 +113,7 @@ public class RecipientIdCache {
                     if (Log.isLoggable(LogTag.THREAD_CACHE, Log.VERBOSE)) {
                         dump();
                     }
-                    
+
                     fill();
                     number = sInstance.mCache.get(longId);
                 }

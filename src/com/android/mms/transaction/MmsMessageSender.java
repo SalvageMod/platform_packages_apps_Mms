@@ -80,7 +80,7 @@ public class MmsMessageSender implements MessageSender {
 
         // Update the 'date' field of the message before sending it.
         sendReq.setDate(System.currentTimeMillis() / 1000L);
-        
+
         sendReq.setMessageSize(mMessageSize);
 
         p.updateHeaders(mMessageUri, sendReq);

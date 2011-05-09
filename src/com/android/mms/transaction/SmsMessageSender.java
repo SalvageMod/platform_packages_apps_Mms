@@ -75,7 +75,7 @@ public class SmsMessageSender implements MessageSender {
 
     public boolean sendMessage(long token) throws MmsException {
         // In order to send the message one by one, instead of sending now, the message will split,
-        // and be put into the queue along with each destinations 
+        // and be put into the queue along with each destinations
         return queueMessage(token);
     }
 
@@ -125,7 +125,7 @@ public class SmsMessageSender implements MessageSender {
 
                         for (int i = 0; i < mNumberOfDests; i++) {
                         try {
-                                Sms.addMessageToUri(mContext.getContentResolver(), 
+                                Sms.addMessageToUri(mContext.getContentResolver(),
                                 Uri.parse("content://sms/queued"), mDests[i],
                                 MessageBody.get(page), null, mTimestamp,
                                 true /* read */,
@@ -135,12 +135,12 @@ public class SmsMessageSender implements MessageSender {
                                 SqliteWrapper.checkSQLiteException(mContext, e);
                         }
                         }
-                } 
+                }
         } else { // Send without split or counter
 
                 for (int i = 0; i < mNumberOfDests; i++) {
                 try {
-                        Sms.addMessageToUri(mContext.getContentResolver(), 
+                        Sms.addMessageToUri(mContext.getContentResolver(),
                         Uri.parse("content://sms/queued"), mDests[i],
                         mMessageText, null, mTimestamp,
                         true /* read */,

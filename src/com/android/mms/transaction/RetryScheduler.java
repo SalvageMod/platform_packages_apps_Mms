@@ -78,7 +78,7 @@ public class RetryScheduler implements Observer {
             if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                 Log.v(TAG, "[RetryScheduler] update " + observable);
             }
-            
+
             // We are only supposed to handle M-Notification.ind, M-Send.req
             // and M-ReadRec.ind.
             if ((t instanceof NotificationTransaction)
@@ -159,7 +159,7 @@ public class RetryScheduler implements Observer {
                         if (isRetryDownloading) {
                             Cursor c = SqliteWrapper.query(mContext, mContext.getContentResolver(), uri,
                                     new String[] { Mms.THREAD_ID }, null, null, null);
-                            
+
                             long threadId = -1;
                             if (c != null) {
                                 try {
