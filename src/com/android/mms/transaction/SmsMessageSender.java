@@ -46,8 +46,8 @@ public class SmsMessageSender implements MessageSender {
 
     // Default preference values
     private static final boolean DEFAULT_DELIVERY_REPORT_MODE  = false;
-    private static final boolean DEFAULT_SMS_SPLIT_MESSAGE = false;
-    private static final boolean DEFAULT_SMS_SPLIT_COUNTER = false;
+    private static final boolean DEFAULT_SMS_SPLIT_MESSAGE = true;
+    private static final boolean DEFAULT_SMS_SPLIT_COUNTER = true;
 
     private static final String[] SERVICE_CENTER_PROJECTION = new String[] {
         Sms.Conversations.REPLY_PATH_PRESENT,

@@ -92,24 +92,26 @@
                         android:entryValues="@array/prefValues_vibrateWhen"
                         android:dialogTitle="@string/prefDialogTitle_vibrateWhen" />
   </PreferenceCategory>
+ <!-- Salvage Settings -->
   <PreferenceCategory android:title="@string/pref_extra_settings">
     <CheckBoxPreference android:key="pref_key_mms_back_to_all_threads"
-                         android:title="@string/pref_title_mms_back_to_all_threads"
-                         android:summary="@string/pref_summary_mms_back_to_all_threads"
-                         android:defaultValue="false" />
+                        android:title="@string/pref_title_mms_back_to_all_threads"
+                        android:summary="@string/pref_summary_mms_back_to_all_threads"
+                        android:defaultValue="true" />
     <CheckBoxPreference android:key="pref_key_mms_black_background"
- 	                  android:title="@string/pref_title_mms_black_background"
- 	                  android:summary="@string/pref_summary_mms_black_background"
- 	                  android:defaultValue="false" />
-    <CheckBoxPreference android:defaultValue="false"
-                      android:key="pref_key_sms_split_160"
-                      android:summary="@string/pref_summary_sms_split_160"
-                      android:title="@string/pref_title_sms_split_160" />
-    <CheckBoxPreference android:defaultValue="false"
-                      android:key="pref_key_sms_split_counter"
-                      android:summary="@string/pref_summary_sms_split_counter"
-                      android:dependency="pref_key_sms_split_160"
-                      android:title="@string/pref_title_sms_split_counter" />
+ 	                android:title="@string/pref_title_mms_black_background"
+ 	                android:summary="@string/pref_summary_mms_black_background"
+ 	                android:defaultValue="true" />
+    <CheckBoxPreference android:defaultValue="true"
+                        android:key="pref_key_sms_split_160"
+                        android:summary="@string/pref_summary_sms_split_160"
+                        android:title="@string/pref_title_sms_split_160" />
+    <CheckBoxPreference android:defaultValue="true"
+                        android:key="pref_key_sms_split_counter"
+                        android:summary="@string/pref_summary_sms_split_counter"
+                        android:dependency="pref_key_sms_split_160"
+                        android:title="@string/pref_title_sms_split_counter" />
+
     <PreferenceScreen android:key="pref_key_mms_font_size_settings"
                       android:title="@string/pref_dialogtitle_mms_salvage_font_size">
     <ListPreference android:key="pref_key_mms_message_font_size"
@@ -134,5 +136,6 @@
                     android:entryValues="@array/pref_mms_convo_subject_font_size_values"
                     android:dialogTitle="@string/pref_dialogtitle_mms_overall_font_size" />
     </PreferenceScreen>
+
     </PreferenceCategory>
   </PreferenceScreen>

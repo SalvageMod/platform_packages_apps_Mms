@@ -1683,8 +1683,8 @@ public class ComposeMessageActivity extends Activity
         super.onCreate(savedInstanceState);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences((Context)ComposeMessageActivity.this);
-        mBlackBackground = prefs.getBoolean(MessagingPreferenceActivity.BLACK_BACKGROUND, false);
-        mBackToAllThreads = prefs.getBoolean(MessagingPreferenceActivity.BACK_TO_ALL_THREADS, false);
+        mBlackBackground = prefs.getBoolean(MessagingPreferenceActivity.BLACK_BACKGROUND, true);
+        mBackToAllThreads = prefs.getBoolean(MessagingPreferenceActivity.BACK_TO_ALL_THREADS, true);
         if(!mBlackBackground) {
             setContentView(R.layout.compose_message_activity);
         } else {
